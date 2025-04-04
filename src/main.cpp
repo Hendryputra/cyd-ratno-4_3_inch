@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <esp32_smartdisplay.h>
+#include "ui/ui.h"
 
 void setup()
 {
@@ -9,6 +10,8 @@ void setup()
   // lv_display_set_rotation(display, LV_DISPLAY_ROTATION_90);
   // lv_display_set_rotation(display, LV_DISPLAY_ROTATION_180);
   // lv_display_set_rotation(display, LV_DISPLAY_ROTATION_270);
+
+  ui_init();
 }
 
 auto lv_last_tick = millis();
@@ -21,4 +24,5 @@ void loop()
     lv_last_tick = now;
     // Update the UI
     lv_timer_handler();
+    ui_tick();
 }
