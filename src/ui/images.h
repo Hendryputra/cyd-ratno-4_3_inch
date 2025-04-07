@@ -7,8 +7,8 @@
 extern "C" {
 #endif
 
-extern const lv_img_dsc_t img_main_back;
 extern const lv_img_dsc_t img_bisamed;
+extern const lv_img_dsc_t img_mainback;
 
 #ifndef EXT_IMG_DESC_T
 #define EXT_IMG_DESC_T

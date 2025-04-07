@@ -7,11 +7,11 @@
 extern "C" {
 #endif
 
-extern const lv_font_t ui_font_fnt;
 extern const lv_font_t ui_font_7seg14;
 extern const lv_font_t ui_font_consolas48;
-extern const lv_font_t ui_font_consolas120;
-extern const lv_font_t ui_font_consolas23;
+extern const lv_font_t ui_font_consolas80;
+extern const lv_font_t ui_font_consolas40;
+extern const lv_font_t ui_font_swiss200;
 
 
 #ifdef __cplusplus

@@ -146,12 +146,12 @@
 	#define LV_DRAW_SW_SUPPORT_RGB565		1
 	#define LV_DRAW_SW_SUPPORT_RGB565A8		1
 	#define LV_DRAW_SW_SUPPORT_RGB888		1
-	#define LV_DRAW_SW_SUPPORT_XRGB8888		1
+	#define LV_DRAW_SW_SUPPORT_XRGB8888		0
 	#define LV_DRAW_SW_SUPPORT_ARGB8888		1
-	#define LV_DRAW_SW_SUPPORT_L8			1
-	#define LV_DRAW_SW_SUPPORT_AL88			1
-	#define LV_DRAW_SW_SUPPORT_A8			1
-	#define LV_DRAW_SW_SUPPORT_I1			1
+	#define LV_DRAW_SW_SUPPORT_L8			0
+	#define LV_DRAW_SW_SUPPORT_AL88			0
+	#define LV_DRAW_SW_SUPPORT_A8			0
+	#define LV_DRAW_SW_SUPPORT_I1			0
 
 	/* Set the number of draw unit.
      * > 1 requires an operating system enabled in `LV_USE_OS`
@@ -487,14 +487,14 @@
 #define LV_FONT_MONTSERRAT_14 1
 #define LV_FONT_MONTSERRAT_16 1
 #define LV_FONT_MONTSERRAT_18 0
-#define LV_FONT_MONTSERRAT_20 0
+#define LV_FONT_MONTSERRAT_20 1
 #define LV_FONT_MONTSERRAT_22 1
 #define LV_FONT_MONTSERRAT_24 1
 #define LV_FONT_MONTSERRAT_26 0
-#define LV_FONT_MONTSERRAT_28 0
+#define LV_FONT_MONTSERRAT_28 1
 #define LV_FONT_MONTSERRAT_30 0
-#define LV_FONT_MONTSERRAT_32 0
-#define LV_FONT_MONTSERRAT_34 0
+#define LV_FONT_MONTSERRAT_32 1
+#define LV_FONT_MONTSERRAT_34 1
 #define LV_FONT_MONTSERRAT_36 0
 #define LV_FONT_MONTSERRAT_38 0
 #define LV_FONT_MONTSERRAT_40 0
@@ -524,7 +524,7 @@
 /*Enable handling large font and/or fonts with a lot of characters.
  *The limit depends on the font size, font face and bpp.
  *Compiler error will be triggered if a font needs it.*/
-#define LV_FONT_FMT_TXT_LARGE 0
+#define LV_FONT_FMT_TXT_LARGE 1
 
 /*Enables/disables support for compressed fonts.*/
 #define LV_USE_FONT_COMPRESSED 0
