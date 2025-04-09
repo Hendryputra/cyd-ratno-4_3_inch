@@ -7,7 +7,7 @@ void setup()
 {
   smartdisplay_init();
 
-  // auto display = lv_display_get_default();
+   auto display = lv_display_get_default();
   //  lv_display_set_rotation(display, LV_DISPLAY_ROTATION_90);
   //  lv_display_set_rotation(display, LV_DISPLAY_ROTATION_180);
   //  lv_display_set_rotation(display, LV_DISPLAY_ROTATION_270);
@@ -39,14 +39,14 @@ void loop()
   setmen = 30;
   setsuhu = 140;
 
-  sprintf(tsetpoint, "%d", setsuhu);
-  set_var_setpoint(tsetpoint);
-  sprintf(tsetjam, "%02d", setjam);
-  set_var_sethour(tsetjam);
-  sprintf(tsetmen, "%02d", setmen);
-  set_var_setmin(tsetmen);
-  sprintf(timerstr, "%02d:%02d:%02d", tjam, tmen, tdet);
-  set_var_timer(timerstr);
+ // sprintf(tsetpoint, "%d", setsuhu);
+ // set_var_setpoint(tsetpoint);
+ // sprintf(tsetjam, "%02d", setjam);
+ // set_var_sethour(tsetjam);
+ // sprintf(tsetmen, "%02d", setmen);
+ // set_var_setmin(tsetmen);
+  //sprintf(timerstr, "%02d:%02d:%02d", tjam, tmen, tdet);
+ // set_var_timer(timerstr);
 
 
   if(cntr<10){

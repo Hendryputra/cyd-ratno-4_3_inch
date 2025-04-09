@@ -271,6 +271,7 @@ void create_screen_main() {
     objects.main = obj;
     lv_obj_set_pos(obj, 0, 0);
     lv_obj_set_size(obj, 800, 480);
+    lv_obj_set_style_bg_color(obj, lv_color_hex(0xff275ba3), LV_PART_MAIN | LV_STATE_DEFAULT);
     {
         lv_obj_t *parent_obj = obj;
         {
@@ -307,9 +308,9 @@ void create_screen_main() {
             // tsuhu
             lv_obj_t *obj = lv_label_create(parent_obj);
             objects.tsuhu = obj;
-            lv_obj_set_pos(obj, 111, 116);
-            lv_obj_set_size(obj, 581, 358);
-            lv_obj_set_style_text_font(obj, &ui_font_swiss200, LV_PART_MAIN | LV_STATE_DEFAULT);
+            lv_obj_set_pos(obj, 111, 126);
+            lv_obj_set_size(obj, 642, 257);
+            lv_obj_set_style_text_font(obj, &ui_font_consolas40, LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_obj_set_style_text_color(obj, lv_color_hex(0xfffffb00), LV_PART_MAIN | LV_STATE_DEFAULT);
             lv_label_set_text(obj, "");
         }
